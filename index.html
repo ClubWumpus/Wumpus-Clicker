@@ -1,0 +1,33 @@
+
+<html>
+<head>
+    <title>Wumpus Clicker Online - Click a wumpus with friends!</title>
+    <style type="text/css" style="display:none">#levelProgress,.bottom{position:fixed;bottom:0}@font-face{font-family:wumpus;src:url(http://pikadude.xyz/projects/WumpusClickerOnline/assets/wumpus.otf)}a,p{font-family:wumpus}@keyframes test{from{font-size:100px}to{font-size:110px}}.aaa{animation-name:test;animation-duration:1s;animation-iteration-count:infinite;animation-direction:alternate}#levelProgress{width:100%;height:30px;background-color:#2C2F33;right:0}#levelBar{position:absolute;width:0;height:100%;background-color:#7289DA}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+</style>
+
+    <script type="text/javascript"  style="display:none">
+<!--
+function send(a) { socket.send(a) } var socket = new WebSocket("ws://128.199.142.235:9000"); socket.onopen = function (a) { socket.send("supbro") }, socket.onmessage = function (a) { var b = a.data; if ("ping" != b) { var c = JSON.parse(b); document.getElementById("clicks").textContent = "Wumpuses: " + c.clicks, document.getElementById("cps").textContent = "Wumpuses Per Second: " + c.cps, document.getElementById("users").textContent = "Users Online: " + c.users, document.getElementById("levelBar").style.width = 100 - (parseInt(c.max) - parseInt(c.exp)) / (10 * parseInt(c.level)) + "%", document.getElementById("level").textContent = "Level: " + c.level } }, window.addEventListener("keydown", function (a) { 32 === a.keyCode && send("click") }, !1);
+//-->
+</script>
+</head>
+<body>
+    <p class="noselect" style="text-align: center;">
+        <a style="font-size: 100px" class="aaa">Click The Wumpus!</a>
+        <br />
+        <img src="http://1.1.1.3/bmi/pikadude.xyz/projects/WumpusClickerOnline/assets/wumpus.png" width="400" onclick="send('click');" style="position: relative; cursor: pointer;"/>
+    </p>
+    <div class="bottom noselect">
+        <a style="font-size: 30px;" id="clicks">Wumpuses: ???</a><br />
+        <a style="font-size: 30px;" id="cps">Wumpuses Per Second: ???</a><br />
+        <a style="font-size: 30px;" id="users">Users Online: ???</a><br />
+        <br />
+        <br />
+    </div>
+    <div id="levelProgress" class="noselect">
+        <div id="levelBar">
+            <p id="level" style="text-align: center; line-height:0px;">Level: ???</p>
+        </div>
+    </div>
+</body>
+</html>
