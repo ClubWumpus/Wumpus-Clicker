@@ -1,3 +1,6 @@
+#0.2.2
+-Fixed bug where cursor would change to default if mouse was hovered over the Wumpus face.
+
 #0.2.1
 -Added fancy cursor that I forgot to add in 0.2
 
