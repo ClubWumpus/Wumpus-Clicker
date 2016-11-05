@@ -1,1 +1,175 @@
-#levelProgress,.bottom{position:fixed;bottom:0}@font-face{font-family:wumpus;src:url(wumpus.otf)}a,p{font-family:wumpus}@keyframes test{from{font-size:100px}to{font-size:110px}}.aaa{animation-name:test;animation-duration:1s;animation-iteration-count:infinite;animation-direction:alternate}#levelProgress{width:100%;height:30px;background-color:#2C2F33;right:0}#levelBar{position:absolute;width:0;height:100%;background-color:#7289DA}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+#levelProgress,
+.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+@font-face {
+    font-family: wumpus;
+    src: url(wumpus.otf);
+}
+
+a,
+p {
+    font-family: wumpus;
+}
+
+#everything {
+    cursor: url(wumpus.ico), auto;
+}
+
+@keyframes test {
+    from {
+        font-size: 100px;
+    }
+
+    to {
+        font-size: 110px;
+    }
+}
+
+@keyframes memes {
+    5% {
+        font-size: 100px;
+    }
+
+    10% {
+        font-size: 110px;
+    }
+
+    15% {
+        font-size: 100px;
+    }
+
+    20% {
+        font-size: 110px;
+    }
+
+    25% {
+        font-size: 100px;
+    }
+
+    30% {
+        font-size: 110px;
+    }
+
+    35% {
+        font-size: 100px;
+    }
+
+    40% {
+        font-size: 110px;
+    }
+
+    45% {
+        font-size: 100px;
+    }
+
+    50% {
+        font-size: 110px;
+    }
+
+    55% {
+        font-size: 100px;
+    }
+
+    60% {
+        font-size: 110px;
+    }
+
+    65% {
+        font-size: 100px;
+    }
+
+    70% {
+        font-size: 110px;
+    }
+
+    75% {
+        font-size: 100px;
+    }
+
+    80% {
+        font-size: 110px;
+    }
+
+    85% {
+        font-size: 100px;
+    }
+
+    90% {
+        font-size: 110px;
+    }
+
+    95% {
+        font-size: 100px;
+    }
+
+    100% {
+        font-size: 110px;
+    }
+}
+
+@keyframes bidoof {
+    20% {
+        background-color: red;
+    }
+
+    40% {
+        background-color: aqua;
+    }
+
+    60% {
+        background-color: lightgreen;
+    }
+
+    80% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: orangered;
+    }
+}
+
+@keyframes woot {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.aaa {
+    animation-name: test;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#levelProgress {
+    width: 100%;
+    height: 30px;
+    background-color: #2C2F33;
+    right: 0;
+}
+
+#levelBar {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #7289DA;
+    animation-duration: 1s, 27s;
+    animation-iteration-count: infinite;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

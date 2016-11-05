@@ -1,4 +1,4 @@
-# Wumpus-Clicker 0.1.3
+# Wumpus-Clicker 0.2.1
 You have one mission. And that's to click that Wumpus! - Made by @PikaDude
 
 # Is this just another Cookie Clicker clone?
