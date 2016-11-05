@@ -14,6 +14,10 @@ p {
     font-family: wumpus;
 }
 
+#everything {
+    cursor: url(wumpus.ico), auto;
+}
+
 @keyframes test {
     from {
         font-size: 100px;
