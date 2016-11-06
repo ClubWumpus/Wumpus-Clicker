@@ -3,22 +3,28 @@
     <title>Wumpus Clicker Online - Click a wumpus with friends!</title>
     <link type="text/css" rel="stylesheet" href="assets/wumpus.css" />
     <script type="text/javascript" src="assets/wumpus.js"></script>
-	<link rel="icon" href="assets/wumpus.ico">
+    <link rel="icon" href="assets/wumpus.ico">
     <meta name="description" content="You have one mission. And that's to click that Wumpus!">
     <meta name="keywords" content="wumpus, clubwumpus, pikadude, softsoap, memes">
 </head>
-<body id="everything">
+<body id="everything" class="everything">
     <p class="noselect" style="text-align: center;">
-        <a style="font-size: 100px" class="aaa" id="title">Click The Wumpus!</a>
+        <a style="font-size: 80px; color: #23272A" class="aaa" id="title">Click The Wumpus!</a>
         <br />
-        <img src="assets/wumpus.png" width="400" onclick="send('click');" style="position: relative;"/>
+        <img src="assets/wumpus.png" width="400" onclick="iclickedit();" style="position: relative;" />
     </p>
-    <div class="bottom noselect">
+    <div class="bottom noselect" style="color: #23272A">
         <a style="font-size: 30px;" id="clicks">Wumpuses: ???</a><br />
         <a style="font-size: 30px;" id="cps">Wumpuses Per Second: ???</a><br />
-        <a style="font-size: 30px;" id="users">SoftSoap Enthusiasts Online: ???</a><br />
+        <a style="font-size: 30px;">SoftSoap™ Enthusiasts Online: <span id="users">???</span></a><br />
         <br />
         <br />
+    </div>
+    <div id="chatroom">
+        <p class="chatroomTitle">Chatroom</p>
+        <pre class="wrap" id="theActualChatRoom">Enter a Nickname in the box below...</pre>
+        <textarea id="daBox"></textarea>
+        <a id="sned" style="font-size: 30px;" onclick="memeslol();">&#10004;</a>
     </div>
     <div id="levelProgress" class="noselect">
         <div id="levelBar">

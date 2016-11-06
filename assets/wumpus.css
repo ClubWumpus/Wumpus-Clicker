@@ -14,8 +14,47 @@ p {
     font-family: wumpus;
 }
 
-#everything {
+.everything {
     cursor: url(wumpus.ico), auto;
+}
+
+.imCLICKING {
+    cursor: url(wumpus.kek), auto;
+}
+
+#chatroom {
+    box-sizing: border-box;
+    border: 10px solid #7289DA;
+    width: 300px;
+    height: 400px;
+    right: 0px;
+    bottom: 80px;
+    position: fixed;
+    background-color: white;
+}
+
+.chatroomTitle {
+    padding: 10px;
+    margin: auto;
+    font-size: 30px;
+    color: #2C2F33;
+}
+
+#theActualChatRoom {
+    border: 2px solid #2C2F33;
+    width: 270px;
+    height: 280px;
+    margin: 0 auto;
+    max-width: 270px;
+    max-height: 280px;
+    overflow: auto;
+}
+
+#daBox {
+    margin: 3px 5px;
+    resize: none;
+    width: 230px;
+    height: 32px;
 }
 
 @keyframes test {
@@ -172,4 +211,12 @@ p {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.wrap {
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera <7 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* IE */
 }
