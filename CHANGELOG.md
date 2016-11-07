@@ -1,3 +1,8 @@
+#0.3.1
+-Fixed bug where pressing the enter key to set your nickname didn't work
+-Removed the feature where pressing the spacebar could be an alternative to clicking due to easy exploitation and causing errors in other features
+-Replaced tick icon with a send button in the chatroom
+
 #0.3
 -Added ChatRoom
 -Fixed bug where Fever Mode wouldn't activate properly

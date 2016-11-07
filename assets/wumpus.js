@@ -23,11 +23,9 @@ socket.onopen = function () {
         document.getElementById('theActualChatRoom').appendChild(document.createTextNode("\n" + massage));
     }
 }, window.addEventListener("keydown", function (a) {
-    if (32 === a.keyCode) {
-        send("click");
-    }
     if (13 === a.keyCode) {
-        pootDispenserHere();
+        if (nicked == false) memeslol();
+        if (nicked) pootDispenserHere();
     }
 }, !1);
 var feverr = false;
